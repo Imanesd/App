@@ -1,0 +1,66 @@
+
+.stats-container {
+   padding: 10px;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+}
+
+
+
+
+.table-container {
+  height: 50%;
+
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  text-align: center;
+
+
+
+
+}
+.tab{
+  padding-left:30%;
+}
+
+
+td {
+  width: 100px;
+  height: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  color: black;
+  height: 40px;
+}
+
+.n {
+  background-color:rgb(117, 168, 213);
+  border-top-left-radius: 10px;
+}
+
+.temp {
+  background-color: rgb(187, 187, 68)
+  ;
+}
+
+.date {
+  background-color: rgb(117, 168, 213);
+  border-top-right-radius: 10px;
+
+}
+
+.graph-container {
+  height: 50%;
+  align-items:center;
+  padding-left:10%;
+}
+.graph{ text-align: center;}
