@@ -72,6 +72,7 @@
     color: var(--title-color);
     font-size: var(--h1-font-size);
 
+
   }
 
   h2 {
@@ -156,6 +157,14 @@
 	transition: all .3s ease;
 	font-family: cursive;
   }
+
+  .custom-btn {
+    background: var(--black-color);
+    color: var(--primary-color);
+    border-color: transparent;
+	transition: all .3s ease;
+	font-family: cursive;
+  }
   .boutt{
   color: var(--secondary-color);
   }
@@ -178,6 +187,9 @@
     box-sizing: border-box;
 
 
+  }
+  .row{
+   align-items:center;
   }
 
 

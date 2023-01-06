@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from .models import Dht
+import csv
+
 
 
 def dht11(request):
@@ -46,3 +48,13 @@ def graph72(request):
     tab=Dht.objects.all()[6:20]
     s6={'tab':tab}
     return render(request, 'graph72.html', s6)
+def exp_csv(request):
+     obj = Dht.objects.all()
+     response = HttpResponse('text/csv')
+     response['Content-Disposition'] = 'attachment; filename=DHT.csv'
+     writer = csv.writer(response)
+     writer.writerow(['ID', 'Temp',  'DT'])
+     studs = obj.values_list('id','temp',  'dt')
+     for std in studs:
+      writer.writerow(std)
+     return response
